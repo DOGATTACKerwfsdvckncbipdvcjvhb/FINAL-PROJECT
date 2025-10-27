@@ -2,7 +2,7 @@ import math
 import time
 import random
 
-Characteristics = ["THE RIZZLER","Kindness","greedy","The SIGMA","Anger Issues","STUPID","DEPRESSION","CHAD","GREAT CHAD","SUPER guy","Happy","Joyfull","I DONT KNOW","SYSTEM ERROR"]
+Characteristics = ["THE RIZZLER","Kindness","greedy","The SIGMA","Anger Issues","STUPID","DEPRESSION","CHAD","GREAT CHAD","SUPER guy","Happy","Joyfull","SIXSEVENnator","none"]
 AmountOfNPCS = 0
 while 1:
     AmountOfNPCS = int(input("Input amount of npcs: "))
@@ -12,9 +12,9 @@ while 1:
 
 count = 0
 while count < AmountOfNPCS:
-    print("NPC", count+1)
+    print("\nNPC", count+1)
     print("Characteristic: ", random.choice(Characteristics))
-    print("\n\n\n")
+    print("Age: ", random.randint())
     count +=1
 
 

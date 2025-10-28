@@ -16,17 +16,21 @@ isAnimal = random.randint(0,2)
 print(isAnimal)
 while count < AmountOfNPCS:
     print("\nNPC", count+1)
+    
     randChar = random.choice(Characteristics)
+
     print("Characteristic: ", randChar)
+
     age = random.randint(1,101)
-    print("Age: ", )
-    floatation = random.random(1.0, 10.0)
+
+    print("Age: ", age)
+    floatation = random.uniform(1.0, 10.0)
     if randChar == "Anger Issues":
         print("Anger Issue trigger: ",floatation)
 
-    floatation = random.random(2.0, 6.7)
+    floatation = random.uniform(2.0, 6.7)
     
-    print("The Height: ", floatation)
+    print("The Height(feet): ", floatation)
 
     count += 1
 

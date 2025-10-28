@@ -12,7 +12,7 @@ while 1:
 age = 0
 
 count = 0
-isAnimal = random.randint(0,2)
+
 print(isAnimal)
 while count < AmountOfNPCS:
     print("\nNPC", count+1)
@@ -24,13 +24,25 @@ while count < AmountOfNPCS:
     age = random.randint(1,101)
 
     print("Age: ", age)
-    floatation = random.uniform(1.0, 10.0)
-    if randChar == "Anger Issues":
-        print("Anger Issue trigger: ",floatation)
 
-    floatation = random.uniform(2.0, 6.7)
+
+    while 1:
+        floatation = random.random()*10
+        if floatation > 0 and floatation < 11:
+            break
+
+    if randChar == "Anger Issues":
+        print("Anger Issue trigger(tollerance, higher equal worse): ",round(floatation, 1))
+
+    while 1:
+        floatation = random.random()*10
+        if floatation > 2 and floatation < 7:
+            break
     
-    print("The Height(feet): ", floatation)
+    print("The Height(feet): ", round(floatation, 1))
+
+    isAnimal = random.randint(0,2)
+    print("Is an animal: ", bool(isAnimal))
 
     count += 1
 

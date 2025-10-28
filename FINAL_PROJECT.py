@@ -9,12 +9,25 @@ while 1:
     if AmountOfNPCS > 0 and AmountOfNPCS < 101:
         break
 
+age = 0
 
 count = 0
+isAnimal = random.randint(0,2)
+print(isAnimal)
 while count < AmountOfNPCS:
     print("\nNPC", count+1)
-    print("Characteristic: ", random.choice(Characteristics))
-    print("Age: ", random.randint())
-    count +=1
+    randChar = random.choice(Characteristics)
+    print("Characteristic: ", randChar)
+    age = random.randint(1,101)
+    print("Age: ", )
+    floatation = random.random(1.0, 10.0)
+    if randChar == "Anger Issues":
+        print("Anger Issue trigger: ",floatation)
+
+    floatation = random.random(2.0, 6.7)
+    
+    print("The Height: ", floatation)
+
+    count += 1
 
 

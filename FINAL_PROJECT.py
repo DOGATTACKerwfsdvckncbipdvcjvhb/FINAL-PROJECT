@@ -3,7 +3,7 @@ import time #imports the time library
 import random #imports the random library
 
 #the traits of the character
-Characteristics = ["THE RIZZLER","Kindness","greedy","The SIGMA","Anger Issues","STUPID","DEPRESSION","CHAD","GREAT CHAD","SUPER guy","Happy","Joyfull","SIXSEVENnator","none","VERY CHARMING","VERY SPECIAL"]
+Characteristics = ["Loyal","Kindness","greedy","Anger Issues","Stubborn","Depression","hard working","Logical","Naive","Happy","Joyfull","Charming"]
 
 #Variable declaration
 AmountOfNPCS = 0
@@ -15,16 +15,7 @@ def GenerateNPC():
     
 
     #prints the random trait from the variable randChar
-    print("Characteristic: ", randChar)
-    
-
-    #gets a random number for age
-    age = random.randint(1,101)
-    
-
-    #prints the age
-    print("Age: ", age)
-    
+    print("Special characteristic: ", randChar)
 
    
     #gets a random float, unlike 
@@ -36,28 +27,51 @@ def GenerateNPC():
         print("Intensity of trait(10 is intense): ",round(intensity, 1))
     
     
-    
-    height = random.uniform(2,7)
-
-    #prints the height of the character
-    print(f"The height is   {round(height, 1)}   ft", )
-
-    #makes a random integer from 0 to 10
+        #makes a random integer from 0 to 10
     isAnimal = random.randint(0,11)
 
     #if statement to change the probability from 50/50 to 30/70
     if isAnimal < 4:
         #sets is animal to true
-        isAnimal = 1
+        isAnimal = True
         
     else:
         #sets is animal to false
-        isAnimal = 0
+        isAnimal = False
         
 
     #prints if the character will be an animal, it also typecasts the variable to a boolean
-    print("Is an animal: ", bool(isAnimal))
+    print("Is a pet: ", isAnimal)
+
+    #checks if the isAnimal bool is false, if it is then it will give height a more human height, if not it will give the average height of a pet
+    if isAnimal == False:
+        #gets a random decimal for height
+        height = random.uniform(2,7)
+
+        #gets a random number for age
+        age = random.randint(1,101)
+        
+        #prints the age
+        print("Age of the human NPC: ", age)
+    else:
+        height = random.uniform(1,3)
+        age = random.randint(1,15)
+        print("Age of the pet NPC: ", age)
+        
+
+
+    #prints the height of the character
+    print(f"The height is   {round(height, 1)}  ft", )
     
+    #using an if statement to determine if the character is young or old
+    if age < 2:
+        print("Character is very young")
+    elif age < 13:
+        print("Character is young")
+    elif age < 40:
+        print("Character is mature")
+    else:
+        print("Character is old")
 
     #new line
     print()

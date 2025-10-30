@@ -6,7 +6,7 @@ This code file is to make npcs with random traits for an open world video game. 
 
 ## Libraries used
 The math, random, and time libraries were used in this code
- 
+`code`
         import math
         import time
         import random
@@ -14,8 +14,10 @@ The math, random, and time libraries were used in this code
 ## Configuration
 The program is not that configurable however you can still change the variables and if statements, you may have to delete some if statements because they may cause errors.
 
+
 ## Highlights
 If the boolean variable in the code is not true, the age and the height of the character will not be the same if the pet boolean is true. The max will change with a different value of said variable.
+
 
 ## Example input and output
     Input amount of npcs(1 to 30): 2

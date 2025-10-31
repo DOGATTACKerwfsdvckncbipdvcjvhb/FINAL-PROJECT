@@ -18,8 +18,10 @@ The program is not that configurable however you can still change the variables 
 
 
 ## Highlights
-If the boolean variable in the code is not true, the age and the height of the character will not be the same if the pet boolean is true. The max will change with a different value of said variable.
+If the boolean variable in the code is not true, the age and the height of the character will not be the same if the pet boolean is true. The max will change with a different value of said variable. The program uses a large function so it does not need to be typed many times if it is needed somewhere else.
 
+## Readability
+Every line of code has a comment explaining what the line of code does, and between each line of code is a new line to make it less cramped. Dupilicates do not have comments.
 
 ## Example input and output
     Input amount of npcs(1 to 30): 2

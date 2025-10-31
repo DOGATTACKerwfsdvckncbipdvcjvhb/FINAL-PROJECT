@@ -5,11 +5,12 @@ Final project
 This code file is to make npcs with random traits for an open world video game. The generator can produce an NPC with a special trait that makes them stand out, the intensity of that trait, if the character is a pet, the age of the character, the height and if the character is young or old.
 
 ## Libraries used
-The math, random, and time libraries were used in this code
-`code`
+The math, random, and time libraries were used in this code.
+
         import math
         import time
         import random
+
 
 These were used to make the code readable while it printed out the output, random was used to make random numbers and chances. While the math was used for rounding down and up.
 
